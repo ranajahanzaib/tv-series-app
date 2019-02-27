@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Intro from './Components/Intro/index';
+import Intro from './Components/Intro';
 import logo from './logo.svg';
 import './App.css';
 
@@ -10,7 +10,7 @@ class App extends Component {
         <header>
           <h1>Search for your favorite TV Shows here</h1>
         </header>
-        <Intro />
+        <Intro message='Here you can find all of your loved tv series'/>
       </div>
     );
   }
