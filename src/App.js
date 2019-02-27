@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import Intro from './Components/Intro';
-import logo from './logo.svg';
 import './App.css';
+import 'whatwg-fetch';
 
 class App extends Component {
   state  = {
     series: []
   }
+
+  componentDidMount() {
+    const series = ["Vikings", "Game Of Thrones"];
+
+    setTimeout(() => {
+      this.setState({ series: series });
+    }, 2000);
+  }
+
   render() {
     return (
       <div className="App">
